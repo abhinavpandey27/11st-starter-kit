@@ -1,4 +1,6 @@
 const fs = require('fs');
+const eleventyNavigationPlugin = require("@11ty/eleventy-navigation");
+
 
 module.exports = function (config) {
   config.setLiquidOptions({
@@ -26,6 +28,9 @@ module.exports = function (config) {
       },
     },
   });
+
+  //Adding Eleventy Navigation Plugin
+  config.addPlugin(eleventyNavigationPlugin);
 
   return {
     dir: {

@@ -9,6 +9,7 @@
         />
         <figcaption>Starter-Kit</figcaption>
       </figure>
+      {{ collections.all | eleventyNavigation | eleventyNavigationToHtml | safe }}
       <ul class="flex space-x-4">
         {% for item in navigation.items %}
           {% if item.url == page.url %}
