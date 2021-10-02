@@ -54,8 +54,8 @@
     "format:eslint": "eslint --ext .js,.html src/ --fix",
     "format:stylelint": "stylelint src/**/*.js src/**/*.html src/**/*.css --fix",
     "validate": "run-s build lint",
-    "setup": "npm install && npm run validate",
-    "prepare": "husky install"
+    "setup": "npm install && npm run validate"
+    
   },
   "devDependencies": {
     "@11ty/eleventy": "^0.12.1",
