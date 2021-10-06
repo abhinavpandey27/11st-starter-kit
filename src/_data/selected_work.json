@@ -1,0 +1,33 @@
+{
+    "items": [
+      {
+        "title": "Pocket Redesign",
+        "subtitle": "Took a stab at solving a problem I faced using a product, through design of course.",
+        "url": "/work/post-slug/index.html",
+        "image": "images/social-share.png",
+        "header": "true"
+      },
+      {
+        "title": "Pocket Redesign",
+        "subtitle": "Took a stab at solving a problem I faced using a product, through design of course.",
+        "url": "/work/post-slug",
+        "image": "images/social-share.png",
+        "header": "true"
+      },
+      {
+        "title": "Pocket Redesign",
+        "subtitle": "Took a stab at solving a problem I faced using a product, through design of course.",
+        "url": "/work/post-slug",
+        "image": "images/social-share.png",
+        "header": "true"
+      },
+      {
+        "title": "Pocket Redesign",
+        "subtitle": "Took a stab at solving a problem I faced using a product, through design of course.",
+        "url": "/work/post-slug",
+        "image": "images/social-share.png",
+        "header": "true"
+      }
+    ]
+  }
+  

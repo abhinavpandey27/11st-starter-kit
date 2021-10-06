@@ -2,11 +2,97 @@
 
 {% block content %}
 <main id="main-content" tabindex="-1">
-  <div class="max-w-2xl mx-auto px-4 sm:px-6 lg:px-8">
-    <h1 class="text-3xl font-bold leading-tight text-gray-900">
-      {{ intro.title }}
-    </h1>
+
+
+<div class="w-2/4">
+
+<!--If header image: put a flexbox column otherwise row-->
+  <div class="w-full flex flex-col-reverse">
+  <!--Text-->
+  <div class="w-full">
+    <div class="w-full">
+    <p class="text-lg pb-4 pt-6 font-bold tracking-tight">
+    Pocket Redesign
+    </p>
+    </div>
+
+    <div class="w-full">
+    <p class="text-base font-dmono text-gray-600">
+    Took a stab at solving a problem I faced using a product, through design of course.
+    </p>
+    </div>
   </div>
+  <!--Image-->
+      <figure class="flex justify-center items-center w-full">
+        <img
+          alt="11st starter-kit logo"
+          class="h-full w-full"
+          src="/images/social-share.png"
+        />
+        
+      </figure>
+
+  </div>
+
+
+    <!--If header image: put a flexbox column otherwise row-->
+  <div class="w-full flex flex-row">
+  <!--Text-->
+  <div class="w-6/12">
+    <div class="w-auto">
+    <p class="text-lg pb-4 pt-6 font-bold tracking-tight">
+    Pocket Redesign
+    </p>
+    </div>
+
+    <div class="w-auto max-w-xs">
+    <p class="text-base font-dmono text-gray-600">
+    Took a stab at solving a problem I faced using a product, through design of course.
+    </p>
+    </div>
+  </div>
+  <!--Image-->
+      <figure class="flex flex-shrink-0 items-center space-x-1 w-6/12">
+        <img
+          alt="11st starter-kit logo"
+          class="h-auto w-100%"
+          src="/images/social-share.png"
+        />
+        
+      </figure>
+
+  </div>
+
+</div>
+  
+
+
+    <!--    <div>
+  <ul class="flex space-x-8">
+        {% for item in selected_work.items %}
+          {% if item.header == true %}
+            {% assign highlight = 'cursor-default' %}
+            {% assign secondhigh = 'font-italic' %}
+            {% assign current = 'aria-current="page"' %}
+          {% else %}
+            {% assign highlight = 'text-gray-600' %}
+            {% assign secondhigh = '' %}
+            {% assign current = '' %}
+          {% endif %}
+          <li>
+            <a
+              href="{{ item.url }}"
+              class="text-base font-dmono hover:text-red-400 {{ highlight }} {{ secondhigh }}"
+              {{ current }}
+            >
+              {{ item.text }}
+            </a>
+          </li>
+        {% endfor %}
+
+      </ul>
+  </div>-->
+
   <div class="max-w-2xl mx-auto px-4 sm:px-6 lg:px-8">
     <div class="py-8 text-gray-600 leading-8">
       <p class="text-xl">

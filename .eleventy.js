@@ -32,6 +32,12 @@ module.exports = function (config) {
   //Adding Eleventy Navigation Plugin
   config.addPlugin(eleventyNavigationPlugin);
 
+  // Returns a collection of blog posts in reverse date order
+  config.addCollection('blog', collection => {
+  return [...collection.getFilteredByGlob('./src/posts/*.md')].reverse();
+  });
+
+
   return {
     dir: {
       input: 'src',
